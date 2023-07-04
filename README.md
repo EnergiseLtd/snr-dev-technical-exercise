@@ -1,16 +1,22 @@
 # Developer Technical Exercise
 
-The purpose of this exercise is to assess candidates on equal parts data handling, visualisation, knowledge of appropriate tooling.
+The purpose of this exercise is to assess candidates on equal parts data handling, visualisation, estimation techniques, and knowledge of appropriate tooling.
 
 ## Brief
-Our client, "Logo Text Here" has supplied cumulative carbon emissions data in csv format (anon_carbon_data.csv). We want to display the weekly emissions back to them in a clear way.
+Our client, "Logo Text Here" has supplied cumulative weekly carbon emissions data in csv format (anon_carbon_data.csv). The data is missing some weeks. We want to display the weekly emissions back to them in a clear way.
 
 ### Steps
-1. Transform the data so that it is weekly, not cumulative.
-1. Display the data on a graph with the x axis being weeks and the y axis being carbon emitted that week in tCO2e (a standard unit).
-
+1. Transform the data so that it is weekly carbon emissions, not cumulative.
+1. Display the data on a graph with the x axis being months and the y axis being carbon emitted that month in tCO2e (a standard unit).
+1. The user will want to "drill down" into the data, by being able to change the x axis into weeks.
+1. The user will want to be able to optionally view the data "as is", with gaps.
+1. The user will want to be able to optionally view the data with estimated data where the gaps are, using a line of best fit (using the data before and after gaps to create estimated values).
+1. The user will want to be able to optionally view the data with estimated data where the gaps are, using pro rata (using the whole data set to create a weekly average value).
+1. Consider animations, tooltips and any other "nice to have" functionality, leaning on your data visualisation library of choice.
+ 
 ### Considerations
-- Data transformation should be done programmatically, therefore no excel or similar tools are to be used.
+- Weekly data can be considered missing if the data point doesn't exist, or if the value is 0.0
+- Data transformation should be done programmatically, leaving the raw csv file untouched, therefore no excel or similar tools are to be used.
 - Any reasonable programming language may be used. Use something comfortable, but capable.
 - Once the program has run, the csv file should remain unchanged, and no new csv file created.
 - The quality of the visualisation should be such that you would feel comfortable presenting it to a paid client.
@@ -20,7 +26,7 @@ Our client, "Logo Text Here" has supplied cumulative carbon emissions data in cs
 - While the browser aspect is important, please do not create a full user experience, with authentications etc. Just a graph and logo on a page is sufficient.
 - The client will be viewing on a desktop. No need to make it responsive.
 - Please prepare a short walkthrough of your code, demonstrating your thought process, tools used, any challenges, and any other relevant information. This should be no more than 5 minutes.
-- An hour, maybe two, is a reasonable amount of time to spend on this. It is not our intention that candidates lose valuable free time completing this exercise. If in doubt, call a halt to the work and present what you have.
+- An hour or two, is a reasonable amount of time to spend on this. It is not our intention that candidates lose valuable free time completing this exercise. If in doubt, call a halt to the work and present what you have.
 - Should you have any questions regarding this brief then email owain at energise dot com
 
 ### Best of luck!
